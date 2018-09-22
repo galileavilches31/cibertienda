@@ -1,6 +1,9 @@
 h1{
 	color: #3b257c;
 }
+nav{
+	display: block;
+}
 nav ul {
 		margin:     0 auto;
 		width:      940px;
