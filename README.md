@@ -1,2 +1,2 @@
 # cibertienda
-Hola amixes, que tal si hacemos lo de el proyecto aqui?
+Hola amixes, que tal si hacemos lo del proyecto aqui?
