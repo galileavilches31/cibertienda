@@ -1,6 +1,14 @@
 h1{
 	color: #3b257c;
 }
+img{
+	width: 200px;
+	height: 200px;
+}
+td{
+	text-align: center;
+	font-style: italic;
+}
 nav ul {
 		margin:     0 auto;
 		width:      940px;
