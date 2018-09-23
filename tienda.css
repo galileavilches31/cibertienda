@@ -1,6 +1,9 @@
 h1, h4{
 	color: #3b257c;
 }
+header, footer, section,nav{
+	display: block;
+}
 img{
 	width: 200px;
 	height: 200px;
@@ -8,6 +11,9 @@ img{
 td{
 	text-align: center;
 	font-style: italic;
+}
+p {
+	padding-bottom: 22px;
 }
 nav ul {
 		margin:     0 auto;
@@ -29,3 +35,45 @@ nav ul {
 				text-decoration: none;
 				color:           #777;
 			}
+footer {
+	position:   absolute;
+	left:       0;
+	width:      100%;
+	background: #222;
+}
+footer div {
+	display: table;
+	margin:  0 auto;
+	padding: 44px 0;
+	width:   940px;
+	color:   #777;
+}
+footer div section {
+	display: table-cell;
+	width:   300px;
+}
+footer div #Acerca {
+	padding-right: 20px;
+}
+footer h3 {
+	color:#48C9B0;
+}
+	
+footer a {
+	color: #999;
+}
+
+footer a:hover {
+	color:           #FFF;
+	text-decoration: none;
+}
+	
+footer ul {
+	margin:     0 0 0 40px;
+	list-style: square;
+	color:      #565656;
+}
+	
+footer ul li a {
+	display: block;
+}
