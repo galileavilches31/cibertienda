@@ -1,6 +1,14 @@
+input{
+	font-style: italic;
+}
 h1{
 	color: #bc6fa1;
 	font-size: 40px;
+	font-style: italic;
+}
+h2{
+	color: #bc6fa1;
+	font-style: italic;
 }
 h4{
 	font-size: 18px;
@@ -16,6 +24,7 @@ img{
 td{
 	text-align: center;
 	font-style: italic;
+	color: #777;
 }
 p {
 	padding-bottom: 1px;
@@ -49,7 +58,7 @@ footer {
 	position:   absolute;
 	left:       0;
 	width:      100%;
-	background: #222;
+	background: #fcd0e5;
 }
 footer div {
 	display: table;
@@ -66,24 +75,11 @@ footer div #Acerca {
 	padding-right: 20px;
 }
 footer h3 {
-	color:#bc6fa1;
-}
-	
-footer a {
-	color: #999;
+	color:#777;
+	font-style: italic;
+	font-size: 23px;
 }
 
-footer a:hover {
-	color:           #FFF;
-	text-decoration: none;
-}
-	
-footer ul {
-	margin:     0 0 0 40px;
-	list-style: square;
-	color:      #565656;
-}
-	
-footer ul li a {
-	display: block;
+footer ul{
+	font-style: italic;
 }
