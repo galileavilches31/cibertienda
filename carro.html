@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<title>Productos</title>
 	<link rel="stylesheet" type="text/css" href="tienda.css">
+	<script type="text/javascript">
+		function sure(Producto,Precio,Cantidad) {
+			if (Cantidad<=0)
+				alert("Cantidad incorrecta");
+			if (confirm("¿Agregar "+Cantidad+" "+Producto+" al carrito?")) {
+
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -27,7 +36,7 @@
 	<!--Aqui empieza la tabla de los productos-->
 	<center>
 		<hr >
-		<form>
+		<form name="productsform">
 			<table>
 				<tr><!--Aqui van los prductos junto a su inforacion (5)-->
 					<td >
@@ -36,7 +45,7 @@
 						<p>$200</p>
 						<p>
 							<input TYPE="value" NAME="agregar1" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter rojo con rayas','200',document.productsform.agregar1.value)">
 						</p>
 					</td>
 					<td >
@@ -45,7 +54,7 @@
 						<p>$100</p>
 						<p>
 							<input TYPE="value" NAME="agregar2" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera Alien','100',document.productsform.agregar2.value)">
 						</p>
 						</td>
 					<td>
@@ -54,7 +63,7 @@
 						<p>$250</p>
 						<p>
 							<input TYPE="value" NAME="agregar3" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pantalón azul','250',document.productsform.agregar3.value)">
 						</p>
 					</td>
 					<td>
@@ -63,7 +72,7 @@
 						<p>$600</p>
 						<p>
 							<input TYPE="value" NAME="agregar4" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Converse Blancos','600',document.productsform.agregar4.value)">
 						</p>
 					</td>
 					<td >
@@ -72,7 +81,7 @@
 						<p>$150</p>
 						<p>
 							<input TYPE="value" NAME="agregar5" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sombrero Negro','150',document.productsform.agregar5.value)">
 						</p>
 					</td>
 				</tr>
@@ -83,16 +92,16 @@
 						<p>$100</p>
 						<p>
 							<input TYPE="value" NAME="agregar6" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Gorro Bad','100',document.productsform.agregar6.value)">
 						</p>
 					</td>
 					<td>
 						<img src="bufanda.jpg">
-						<p>Budanda</p>
+						<p>Bufanda</p>
 						<p>$85</p>
 						<p>
 							<input TYPE="value" NAME="agregar7" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Bufanda','85',document.productsform.agregar7.value)">
 						</p>
 					</td>
 					<td>
@@ -101,7 +110,7 @@
 						<p>$98</p>
 						<p>
 							<input TYPE="value" NAME="agregar8" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Guantes','98',document.productsform.agregar8.value)">
 						</p>
 					</td>
 					<td>
@@ -110,7 +119,7 @@
 						<p>$200</p>
 						<p>
 							<input TYPE="value" NAME="agregar9" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Reloj rosa','200',document.productsform.agregar9.value)">
 						</p>
 					</td>
 					<td>
@@ -119,7 +128,7 @@
 						<p>$54</p>
 						<p>
 							<input TYPE="value" NAME="agregar10" VALUE="1" SIZE="3"> 
-							<input TYPE="button" NAME="cbtadd" VALUE="Agregar">
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('lentes','54',document.productsform.agregar10.value)">
 						</p>
 					</td>
 				</tr>
