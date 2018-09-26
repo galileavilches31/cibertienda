@@ -1,25 +1,34 @@
+<!--A los agregar se le debe agregar xd onclick-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Productos</title>
 	<link rel="stylesheet" type="text/css" href="tienda.css">
+	<script type="text/javascript">
+		function sure(Producto,Precio,Cantidad) {
+			if (Cantidad<=0)
+				alert("Cantidad incorrecta");
+			if (confirm("¿Agregar "+Cantidad+" "+Producto+" al carrito?")) {
+
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<center>
-			<i><h1 >Tienda Online</h1></i>
-			<h4>Bienvenido(a) a nuestra tienda online. Tenemos bastantes productos
-			que podrían interesarte. Siéntete libre de echar un vistazo y comprar
-			cualquier producto que sea de tu agrado.</h4>
+			<h1 >ReViBe</h1>
+			<h4><p>Bienvenido(a) a nuestra tienda online. Tenemos bastantes productos
+			que podrían interesarte. Siéntete libre de echar un vistazo.</p></h4>
 		</center>
 	</header>
 	<nav>
 		<!--Navegación-->
 		<ul >
 			<li><a href="">Productos</a></li>
-			<li><a href="">Carrito</a></li>
-			<li><a href="">Orden de compra</a></li>
+			<li><a href="file:///C:/Users/Karla/Documents/programas/Html/EstadoCarrito.html">Carrito</a></li>
+			<li><a href="file:///C:/Users/Karla/Documents/programas/Html/orden.html">Orden de compra</a></li>
 		</ul>
 		<ul class="navbar">    
 			<li><a href="">Página Principal</a>   
@@ -28,52 +37,105 @@
 			<li><a href="">Accesorios</a> 
 		</ul> 
 	</nav>
+	<br>
+	<br>
 	<!--Aqui empieza la tabla de los productos-->
 	<center>
-		<form>
+		<hr >
+		<form name="productsform">
 			<table>
-				<tr><!--Aqui van todas la imagenes (5)-->
+				<tr><!--Aqui van los prductos junto a su inforacion (5)-->
 					<td >
 						<img src="sueterrojo.jpg" >
 						<p>Sueter rojo con rayas</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar1" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter rojo con rayas','200',document.productsform.agregar1.value)">
+						</p>
 					</td>
 					<td >
 						<img src="playera.jpg" >
 						<p>Playera Alien</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar2" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera Alien','100',document.productsform.agregar2.value)">
+						</p>
 						</td>
 					<td>
 						<img src="pantalon.jpg">
 						<p>Pantalón azul</p>
+						<p>$250</p>
+						<p>
+							<input TYPE="value" NAME="agregar3" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pantalón azul','250',document.productsform.agregar3.value)">
+						</p>
 					</td>
 					<td>
 						<img src="converse.jpg">
 						<p>Converse Blancos</p>
+						<p>$600</p>
+						<p>
+							<input TYPE="value" NAME="agregar4" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Converse Blancos','600',document.productsform.agregar4.value)">
+						</p>
 					</td>
 					<td >
 						<img src="sombrero.jpg">
 						<p>Sombrero Negro</p>
+						<p>$150</p>
+						<p>
+							<input TYPE="value" NAME="agregar5" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sombrero Negro','150',document.productsform.agregar5.value)">
+						</p>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<img src="gorro.jpg">
 						<p>Gorro Bad</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar6" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Gorro Bad','100',document.productsform.agregar6.value)">
+						</p>
 					</td>
 					<td>
 						<img src="bufanda.jpg">
-						<p>Budanda</p>
+						<p>Bufanda</p>
+						<p>$85</p>
+						<p>
+							<input TYPE="value" NAME="agregar7" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Bufanda','85',document.productsform.agregar7.value)">
+						</p>
 					</td>
 					<td>
 						<img src="gloves.jpg">
 						<p>Guantes</p>
+						<p>$98</p>
+						<p>
+							<input TYPE="value" NAME="agregar8" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Guantes','98',document.productsform.agregar8.value)">
+						</p>
 					</td>
 					<td>
 						<img src="reloj.jpg">
 						<p>Reloj rosa</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar9" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Reloj rosa','200',document.productsform.agregar9.value)">
+						</p>
 					</td>
 					<td>
 						<img src="lentes.jpg">
 						<p>Lentes Rosa</p>
+						<p>$54</p>
+						<p>
+							<input TYPE="value" NAME="agregar10" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('lentes','54',document.productsform.agregar10.value)">
+						</p>
 					</td>
 				</tr>
 			</table>
@@ -88,9 +150,12 @@
 				</header>
 				<p>Esta tienda online fue creada en Septiembre de 2018</br>
 				Se encuentra bajo la supervisión de los estudiantes en la
-				carrera de sistemas computacionales:</br>
-				Iván Béjar</br>Karla Reyes</br> Galilea Vilches</br>
-				</p>
+				carrera de sistemas computacionales:</p>
+				<ul>
+					<li>Béjar Iván</li>
+					<li>Reyes Karla</li>
+					<li>Vilches Galilea</li>
+				</ul>
 			</section>
 		</div>
 	</footer>
