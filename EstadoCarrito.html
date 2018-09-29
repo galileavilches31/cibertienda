@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carrito</title>
+	<link rel="stylesheet" type="text/css" href="tienda.css">
+</head>
+<body>
+	<header>
+		<center>
+			<h2>Estado del Carrito</h2>
+		</center>
+	</header>
+	<nav>
+		<!--Navegación-->
+		<ul >
+			<li><a href="file:///C:/Users/USUARIO/Documents/GitHub/cibertienda/carro.html">Productos</a></li>
+			<li><a href="">Carrito</a></li>
+			<li><a href="file:///C:/Users/USUARIO/Documents/GitHub/cibertienda/orden.html">Orden de compra</a></li>
+		</ul>
+	</nav>
+	<br>
+	<br>
+	<hr>
+	<center>
+		<script type="text/javascript">
+			var Cantidad, Precio, Producto;
+			//PASAR LAS VARIABLES
+			Cantidad = window.localStorage.getItem("C");
+			Precio = window.localStorage.getItem("Pre");
+			Producto = window.localStorage.getItem("Pro");
+			document.writeln("<table>"); 
+			document.writeln("<thead><tr><th><i> Producto</i> </th>"); 
+			document.writeln("<th><i> Precio </i></th>");
+			document.writeln("<th><i> Cantidad</i> </th>");
+			document.writeln("</tr></thead><tbody>");
+			document.writeln("<tr><td>" + Producto +"</td><td>" + Precio + "</td><td>" + Cantidad + "</td></tr>");
+			document.writeln("</tbody></table>");
+		</script>
+	</center>
+	<!--<center>
+		<table>
+			<tr>
+				<td width="130">Producto</td>
+				<td width="130">Precio</td>
+				<td width="130">Cantidad</td>
+			</tr>
+		</table>
+	</center>-->
+	<footer>
+		<!--Pie de pagina-->
+		<div>
+			<section id="Acerca">
+				<header>
+					<h3>Acerca</h3>
+				</header>
+				<p>Esta página fue creada en Septiembre 2018</br> bajo la 
+				supervisión de:</p>
+				<ul>
+					<li>Iván Béjar</li>
+					<li>Karla Reyes</li>
+					<li>Galilea Vilches</li>
+				</ul>
+				<p>En la asignatura "Tecnolog&iacute;as para la Web"</br>
+				Grupo: 2CM9</br></p>
+			</section>
+			<section id="PaginasSimilares">
+				<header>
+					<h3>Páginas similares</h3>
+				</header>
+				<ul>
+					<li><a href="#">UNO</a></li>
+					<li><a href="#">DOS</a></li>
+					<li><a href="#">TRES</a></li>
+				</ul>
+			</section>
+			<section id="Populares">
+				<header>
+					<h3>Popular</h3>
+				</header>
+				<ul>
+					<li><a href="#">Presiona aqu&iacute;</a></li>
+					<li><a href="#">O aqu&iacute;</a></li>
+					<li><a href="#">Mejor aqu&iacute;</a></li>
+				</ul>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

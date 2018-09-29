@@ -1,7 +1,22 @@
-h1{
-	color: #3b257c;
+input{
+	font-style: italic;
 }
-
+h1{
+	color: #bc6fa1;
+	font-size: 40px;
+	font-style: italic;
+}
+h2{
+	color: #bc6fa1;
+	font-style: italic;
+}
+h4{
+	font-size: 18px;
+	color: #777;
+}
+header, footer, section, nav, aside{
+	display: block;
+}
 img{
 	width: 200px;
 	height: 200px;
@@ -9,29 +24,164 @@ img{
 td{
 	text-align: center;
 	font-style: italic;
+	color: #777;
 }
-  nav{
-	margin:     0 auto;
-		width:      940px;
-		list-style: none;
-}
-nav ul {
-		margin:     0 auto;
-		width:      940px;
-		list-style: none;
-	}
 
-		nav ul li {
-			float: left;
-		}
+body{
+	padding-left: 40px;
+}
+
+p {
+	padding-bottom: 22px;
+	font-style: italic;
+}
+hr{
+	width: 75%;
+	color: #bc6fa1;
+}
+
+/*NAVEGACIÓN*/
+nav ul {
+	margin:     0 auto;
+	width:      940px;
+	list-style: none;
+}
+nav ul li {
+	float: left;
+}
 		
-			nav ul li a {
-				display:         block;
-				margin-right:    30px;
-				width:           280px;
-				font-size:       18px;
-				line-height:     44px;
-				text-align:      center;
-				text-decoration: none;
-				color:           #777;
-			}
+nav ul li a {
+	display:         block;
+	margin-right:    30px;
+	width:           280px;
+	font-size:       18px;
+	line-height:     44px;
+	text-align:      center;
+	text-decoration: none;
+	color:           purple;
+}
+
+/*BARRA LATERAL*/
+ul.navbar {  
+	list-style-type: none;     
+	padding: 0;     
+	margin: 0;   
+	position: absolute;     
+	top: 8em;     
+	right: 0em;     
+	width: 10em   
+}     
+ul.navbar li{   
+	font-style: italic;      
+	margin: 0.01em;     
+	padding: 0.3em;       
+} 
+
+ul.navbar header{
+	color:#bc6fa1;
+	margin: 0.01em;     
+	padding: 0.3em;
+}
+
+/*PIE DE PÁGINA*/		
+footer {
+	position:   absolute;
+	left:       0;
+	width:      100%;
+	background: #fcd0e5;
+}
+
+footer div {
+	display: table;
+	margin:  0 auto;
+	padding: 50px 0;
+	width:   940px;
+	color:   #AEB6BF;
+}
+footer div section {
+	display: table-cell;
+	width:   700px;
+}
+footer div #Acerca, footer div #PaginasSimilares, footer div #Populares {
+	font-style: italic;
+	text-align: left;
+}
+
+footer h2 {
+	color:#EBEDEF;
+}
+	
+footer a {
+	color: #999;
+}
+	
+footer ul {
+	margin:     0 0 0 40px;
+	list-style: square;
+	color:      #565656;
+  	font-style: italic;
+}
+	
+footer ul li a {
+	display: block;
+}
+footer h3 {
+	color:#777;
+	font-style: italic;
+	font-size: 23px;
+}
+
+/*INTRODUCCIÓN*/
+#intro {
+	position:   relative;
+	margin-top: 10px;
+	padding:    40px;
+	width:    1040px;
+	background: #fcd0e5 url("images/intro_background.png") repeat-x;
+	
+	/* Background-size not implemented yet */
+	-webkit-background-size: 100%;
+	-o-background-size:      100%;
+	-khtml-background-size:  100%;
+
+	
+	/* Border-radius not implemented yet */
+	-moz-border-radius:    22px;
+	-webkit-border-radius: 22px;
+}
+
+#intro h4, #intro p {
+	position: relative;
+	z-index:  9999;
+	width:    336px;
+}
+	
+#intro h4 {
+	padding:     0 0 22px 0;
+	font-weight: normal;
+	color:       #8a898a;
+	font-size: 20px;
+}	
+#intro img {
+	position: absolute;
+	top:      0;
+	right:    0;
+	width:    653px;
+	height:   100%;
+
+	/* Border-radius not implemented yet */
+	-moz-border-radius:    22px;
+	-webkit-border-radius: 22px;
+}
+
+/*TABLA CARRITO*/
+table{ 
+	width: 500px;
+	border-collapse: collapse;
+	background-color: white; 
+}
+th{
+	text-align: center;
+	color: black;
+	background-color: #fcd0e5;
+}

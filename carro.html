@@ -8,68 +8,321 @@
 <body>
 	<header>
 		<center>
-			<i><h1 >Tienda Online</h1></i>
+			<h1 >ReViBe</h1>
 		</center>
 	</header>
 	<nav>
 		<!--Navegación-->
 		<ul >
 			<li><a href="">Productos</a></li>
-			<li><a href="">Carrito</a></li>
-			<li><a href="">Orden de compra</a></li>
+			<li><a href="file:///C:/Users/USUARIO/Documents/GitHub/cibertienda/EstadoCarrito.html">Carrito</a></li>
+			<li><a href="file:///C:/Users/USUARIO/Documents/GitHub/cibertienda/orden.html">Orden de compra</a></li>
 		</ul>
+		<ul class="navbar">    
+			<header>
+				<h3>Categor&iacute;as</h3>
+			</header> 
+				<li><a href="#losMens">Hombre</a>   
+				<li><a href="#lasWomens">Mujer</a> 
+				<li><a href="#losAccesorys">Accesorios</a>
+		</ul> 
 	</nav>
+	<br>
+	<br>
+	<hr>
+	<!--Rectangulo con la imagen del archivo de las flores-->
+	<section id = "intro">
+			<!--Introducciòn-->
+			<header>
+				<h4><p>Bienvenido(a) a nuestra tienda online. Tenemos bastantes productos
+			que podrían interesarte. Siéntete libre de echar un vistazo.</p></h4>
+			</header>
+			<img src="ropa.jpg" alt="NickyNickyJam" width="1500" height="300"/>
+		</section>
 	<!--Aqui empieza la tabla de los productos-->
 	<center>
-		<form>
+		<hr >
+		<form name="productsform">
+			<h2>Mujeres</h2>
+			<div id="lasWomens">
 			<table>
-				<tr><!--Aqui van todas la imagenes (5)-->
+				<tr><!--Aqui van los prductos junto a su informacion (5)-->
 					<td >
 						<img src="sueterrojo.jpg" >
 						<p>Sueter rojo con rayas</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar1" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter rojo con rayas','200',document.productsform.agregar1.value)">
+						</p>
 					</td>
 					<td >
 						<img src="playera.jpg" >
 						<p>Playera Alien</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar2" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera Alien','100',document.productsform.agregar2.value)">
+						</p>
 						</td>
 					<td>
 						<img src="pantalon.jpg">
 						<p>Pantalón azul</p>
+						<p>$250</p>
+						<p>
+							<input TYPE="value" NAME="agregar3" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pantalón azul','250',document.productsform.agregar3.value)">
+						</p>
 					</td>
 					<td>
 						<img src="converse.jpg">
 						<p>Converse Blancos</p>
+						<p>$600</p>
+						<p>
+							<input TYPE="value" NAME="agregar4" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Converse Blancos','600',document.productsform.agregar4.value)">
+						</p>
 					</td>
 					<td >
-						<img src="sombrero.jpg">
-						<p>Sombrero Negro</p>
+						<img src="vestido.jpg">
+						<p>Vestido azul</p>
+						<p>$300</p>
+						<p>
+							<input TYPE="value" NAME="agregar5" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Vestido azul','300',document.productsform.agregar5.value)">
+						</p>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="gorro.jpg">
-						<p>Gorro Bad</p>
+						<img src="vrayas.jpg">
+						<p>Vestido de rayas</p>
+						<p>$120</p>
+						<p>
+							<input TYPE="value" NAME="agregar6" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Vestido de rayas','120',document.productsform.agregar6.value)">
+						</p>
 					</td>
 					<td>
-						<img src="bufanda.jpg">
-						<p>Budanda</p>
+						<img src="chamarra.jpg">
+						<p>Chamarra</p>
+						<p>$500</p>
+						<p>
+							<input TYPE="value" NAME="agregar7" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Chamarra','500',document.productsform.agregar7.value)">
+						</p>
 					</td>
 					<td>
-						<img src="gloves.jpg">
-						<p>Guantes</p>
+						<img src="helga.jpg">
+						<p>Playera Helga</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar8" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera Helga','100',document.productsform.agregar8.value)">
+						</p>
+					</td>
+					<td>
+						<img src="pants.jpg">
+						<p>Pantalón deportivo</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar9" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pantalón deportivo','200',document.productsform.agregar9.value)">
+						</p>
+					</td>
+					<td>
+						<img src="sueter.jpg">
+						<p>Sueter Gris</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar10" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter Gris','200',document.productsform.agregar10.value)">
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<h2>Hombres</h2>
+		<div id="losMens">
+			<table>
+				<tr>
+					<td>
+						<img src="arnold.jpg">
+						<p>Playera arnold</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar11" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera arnold','100',document.productsform.agregar11.value)">
+						</p>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<h2>Accesorios</h2>
+		<div id="losAccesorys">
+			<table>
+				<tr>
+					<td>
+						<img src="lentes.jpg">
+						<p>Lentes Rosa</p>
+						<p>$54</p>
+						<p>
+							<input TYPE="value" NAME="agregar21" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('lentes','54',document.productsform.agregar21.value)">
+						</p>
 					</td>
 					<td>
 						<img src="reloj.jpg">
 						<p>Reloj rosa</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar22" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Reloj rosa','200',document.productsform.agregar22.value)">
+						</p>
 					</td>
 					<td>
-						<img src="lentes.jpg">
-						<p>Lentes Rosa</p>
+						<img src="gloves.jpg">
+						<p>Guantes</p>
+						<p>$98</p>
+						<p>
+							<input TYPE="value" NAME="agregar23" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Guantes','98',document.productsform.agregar23.value)">
+						</p>
+					</td>
+					<td>
+						<img src="bufanda.jpg">
+						<p>Bufanda</p>
+						<p>$85</p>
+						<p>
+							<input TYPE="value" NAME="agregar24" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Bufanda','85',document.productsform.agregar24.value)">
+						</p>
+					</td>
+					<td>
+						<img src="sombrero.jpg">
+						<p>Sombrero Negro</p>
+						<p>$150</p>
+						<p>
+							<input TYPE="value" NAME="agregar25" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sombrero Negro','150',document.productsform.agregar25.value)">
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="gorro.jpg">
+						<p>Gorro Bad</p>
+						<p>$100</p>
+						<p>
+							<input TYPE="value" NAME="agregar26" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Gorro Bad','100',document.productsform.agregar26.value)">
+						</p></td>
+					<td>
+						<img src="aretes.jpg">
+						<p>Conjunto de aretes</p>
+						<p>$60</p>
+						<p>
+							<input TYPE="value" NAME="agregar27" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Conjunto de aretes','60',document.productsform.agregar27.value)">
+						</p>
+					</td>
+					<td>
+						<img src="anillo.jpg">
+						<p>Anillo</p>
+						<p>$120</p>
+						<p>
+							<input TYPE="value" NAME="agregar28" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Anillo','120',document.productsform.agregar28.value)">
+						</p>
+					</td>
+					<td>
+						<img src="collar.jpg">
+						<p>Collar gigante</p>
+						<p>$190</p>
+						<p>
+							<input TYPE="value" NAME="agregar29" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Collar gigante','190',document.productsform.agregar29.value)">
+						</p>
+					</td>
+					<td>
+						<img src="pulsera.jpg">
+						<p>Pulsera</p>
+						<p>$80</p>
+						<p>
+							<input TYPE="value" NAME="agregar30" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pulsera','80',document.productsform.agregar30.value)">
+						</p>
 					</td>
 				</tr>
 			</table>
+		</div>
 		</form>
 	</center>
-
+	<script type="text/javascript">
+		function sure(Producto,Precio,Cantidad) 
+		{
+			if (Cantidad<=0)
+				alert("Cantidad incorrecta");
+			if (confirm("¿Agregar "+Cantidad+" "+Producto+" al carrito?")) 
+			{
+				window.localStorage.setItem("C", Cantidad);
+				window.localStorage.setItem("Pre", Precio);
+				window.localStorage.setItem("Pro", Producto);
+			}
+		}
+	</script>
+	<footer>
+		<!--Pie de pagina-->
+		<div>
+			<section id="Acerca">
+				<header>
+					<h3>Acerca</h3>
+				</header>
+				<p>Esta página fue creada en Septiembre 2018</br> bajo la 
+				supervisión de:</p>
+				<ul>
+					<li>Iván Béjar</li>
+					<li>Karla Reyes</li>
+					<li>Galilea Vilches</li>
+				</ul>
+				<p>En la asignatura "Tecnolog&iacute;as para la Web"</br>
+				Grupo: 2CM9</br></p>
+			</section>
+			<section id="PaginasSimilares">
+				<header>
+					<h3>Páginas similares</h3>
+				</header>
+				<ul>
+					<li><a href="#">UNO</a></li>
+					<li><a href="#">DOS</a></li>
+					<li><a href="#">TRES</a></li>
+				</ul>
+			</section>
+			<section id="Populares">
+				<header>
+					<h3>Popular</h3>
+				</header>
+				<ul>
+					<li><a href="#">Presiona aqu&iacute;</a></li>
+					<li><a href="#">O aqu&iacute;</a></li>
+					<li><a href="#">Mejor aqu&iacute;</a></li>
+				</ul>
+			</section>
+		</div>
+	</footer>
 </body>
 </html>
+
+
